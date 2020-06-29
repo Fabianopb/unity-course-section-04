@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CoreLoop : MonoBehaviour
 {
     [SerializeField] int max;
     [SerializeField] int min;
+    [SerializeField] public TextMeshProUGUI stringGuess;
     int guess;
 
     void Start()
@@ -15,13 +17,14 @@ public class CoreLoop : MonoBehaviour
 
     void StartGame()
     {
-        max = max + 1;
         NextGuess();
+        max = max + 1;
     }
 
     void NextGuess()
     {
         guess = (max + min) / 2;
+        stringGuess.text = guess.ToString();
     }
 
     public void OnPressHigher()
