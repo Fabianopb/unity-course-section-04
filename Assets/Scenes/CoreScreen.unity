@@ -540,6 +540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max: 1000
   min: 1
+  stringGuess: {fileID: 1419396971}
 --- !u!4 &198561287
 Transform:
   m_ObjectHideFlags: 0
@@ -1163,7 +1164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 500
+  m_text: ???
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a56f523d7af444d908e7e9f48ffb73c4, type: 2}
   m_sharedMaterial: {fileID: -4080359629679892827, guid: a56f523d7af444d908e7e9f48ffb73c4,
